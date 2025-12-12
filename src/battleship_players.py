@@ -62,7 +62,6 @@ class AIPlayer:
         self.ship_board = Board()
         self.tracking_board = Board()
         
-        # 🌟 CRITICAL FIX: Changed 'self.untried_target' to 'self.untried_targets'
         self.untried_targets = [(r, c) for r in range(BOARD_SIZE) for c in range(BOARD_SIZE)]
         random.shuffle(self.untried_targets)
         

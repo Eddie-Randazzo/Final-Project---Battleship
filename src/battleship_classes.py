@@ -18,7 +18,6 @@ HIT = 'X'
 
 class Ship:
     "Represents a ship with its status."
-    # FIX 1: Corrected constructor name from _init__ to __init__
     def __init__(self, name, length):
         self.name = name
         self.length = length
@@ -85,7 +84,6 @@ class Board:
             self.grid[r][c] = SHIP
             coords.append((r, c))
             
-        # These lines MUST be outside the 'for' loop to add the ship only once.
         ship.coordinates = coords
         self.ships.append(ship)
     

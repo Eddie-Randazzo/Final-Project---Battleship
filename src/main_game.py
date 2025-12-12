@@ -29,9 +29,7 @@ def update_boards_and_check_win(attacker, defender, target_row, target_col):
         print("Shot rejected (duplicate target).") # Should only happen with fault AI/input logic
         
     # 3. Check for win
-    # FIX 3: Corrected defender.ship_baord to defender.ship_board
     if defender.ship_board.all_ships_sunk():
-        # FIX 4: Corrected ]n to \n
         print(f"\n!!! GAME OVER: {attacker.name} WINS !!!")
         print("\nFinal Opponent Board:")
         defender.ship_board.display_board(show_ships=True)
@@ -50,7 +48,7 @@ def game_loop(player, ai):
         
         # --- Player Turn (Attack AI) ---
         print(f"\n{player.name}'s Turn (Target: {ai.name}): ")
-        print("Your Target Board:") # Corrected the missing colon for style
+        print("Your Target Board:") 
         player.tracking_board.display_board(show_ships=False)
         print("Your Ship Board:")
         player.ship_board.display_board(show_ships=True)
@@ -69,7 +67,6 @@ def game_loop(player, ai):
         # Display player's ship board after AI shot to show damage
         if not game_over:
             print("\nYour Ship Board (Updated after AI shot):")
-            # FIX 5: Corrected player.ship_baord to player.ship_board
             player.ship_board.display_board(show_ships=True)
             input("\nPress Enter to continue to the next turn...")
 
