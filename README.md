@@ -2,21 +2,21 @@
 
 **Project Title:** Command Line Battleship
 
-**Author:** [Your Name]
+**Author:** Eddie Randazzo
 
 ## 🎯 Objective
 This project implements the classic two-player Battleship game in a Python Command Line Interface (CLI). The game supports a single-player mode against a basic AI opponent.
 
 ## 🛠️ Technology Stack
-* **Language:** Python 3.x
+* **Language:** Python
 * **Interface:** Command Line Interface (CLI)
 
 ## 🚀 How to Run the Game
 
 1.  **Clone the repository:**
     ```bash
-    git clone [Your Repository URL]
-    cd [Your Repository Name]
+    git clone https://github.com/Eddie-Randazzo/Final-Project---Battleship
+    cd Final-Project---Battleship
     ```
 2.  **Navigate to the source directory:**
     ```bash
